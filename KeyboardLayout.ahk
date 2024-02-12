@@ -1,4 +1,4 @@
-#Requires AutoHotkey v2.1-alpha.8
+#requires AutoHotkey v2.1-alpha.8
 
 ; WinRT library is required. 
 #Include <windows>
