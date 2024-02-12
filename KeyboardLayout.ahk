@@ -64,12 +64,6 @@ class KeyboardLayout
      */
     static Call(lanList*)
     {
-        static cSwitchList := Map()
-        if !cSwitchList.Count && lanList.Length {
-            for i, lp in lanList
-                cSwitchList[lp] := lanList[i = lanList.Length ? 1 : i+1]
-        }
-
         idThread := DllCall("GetWindowThreadProcessId", "ptr", DllCall("GetForegroundWindow"), "uptr*", &pid := 0)
         lpgui    := this.GetGUIThreadInfo(idThread)
         lpName   := this.CurrentKeyboardLayout
