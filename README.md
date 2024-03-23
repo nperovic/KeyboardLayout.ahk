@@ -1,7 +1,7 @@
 ## Examples
 ```c++
 #requires AutoHotkey v2.1-alpha.8
-#include <windows.ahk>
+#include <windows>
 
 /* Switch Between Installed Keyboard Layouts. */
 RShift::KeyboardLayout()
